@@ -1,4 +1,3 @@
-offline-api
+Offline requests
 ===========
-
-Example about offline api
+Approach for manipulate, offline requests and "offline api first".
