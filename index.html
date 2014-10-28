@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Storage</title>
+  <script type="text/javascript" src="./mydb.js" ></script>
+  <script type="text/javascript" src="./offlineApi.js" ></script>
+</head>
+<style>
+  * {
+    font-family: Helvetica;
+    color: #333;
+  }
+  .container {
+    text-align: center;
+  }
+
+  .table {
+    margin: 30px 0px;
+    width: 100%;
+    border-spacing: 0;
+  }
+
+  .table td, .table th {
+    border: 1px solid #999;
+    padding: 5px;
+    border-left: 0;
+  }
+
+  .table td:first-child, .table th:first-child {
+    border-left: 1px solid #999;
+  }
+
+  .table td:last-child, .table th:last-child {
+    border-bottom: 1px solid #999;
+  }
+
+  #btn {
+    background: #4F8BFF;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+</style>
+<body>
+  <div class="container">
+    <p id="log"></p>
+    <p id="status"></p>
+  </div>
+  <div class="container">
+    <button id="btn">Send request</button>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Type</th>
+        <th>Url</th>
+        <th>Data</th>
+      </tr>
+    </thead>
+    <tbody id="requestLog">
+    </tbody>
+  </table>
+
+  <script type="text/javascript" src="./app.js" ></script>
+</body>
+</html>
