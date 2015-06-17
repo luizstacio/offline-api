@@ -15,7 +15,7 @@
     };
     /* Callback in offline state */
     request.offlineSave = function () {
-      $log.innerHTML = ('You is offline. Your changes will be synchronized when you are online.');
+      $log.innerHTML = ('You are offline. Your changes will be synchronized when you are online.');
     };
     request.send( 'timestamp=' + Date.now() );
     list();
